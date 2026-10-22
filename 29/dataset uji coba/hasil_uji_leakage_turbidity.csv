@@ -1,0 +1,7 @@
+skenario,model,accuracy,f1_macro
+"Semua fitur (temp_C, pH, turbidity_NTU)",Random Forest,1.0,1.0
+"Semua fitur (temp_C, pH, turbidity_NTU)",KNN,0.9976798143851509,0.9980902398133975
+"Tanpa turbidity (temp_C, pH)",Random Forest,1.0,1.0
+"Tanpa turbidity (temp_C, pH)",KNN,0.9953596287703016,0.9958585994137814
+Hanya turbidity,Random Forest,0.9976798143851509,0.9977683336244203
+Hanya turbidity,KNN,0.9976798143851509,0.9969805252814008

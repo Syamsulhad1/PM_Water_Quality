@@ -1,0 +1,13 @@
+kasus,hasil,class,anomali,skor
+Pembacaan normal,OUTPUT,Normal,False,0.0831
+Turbidity ekstrem,OUTPUT,Caution,True,-0.1485
+Semua nol,OUTPUT,Normal,True,-0.1577
+Nilai negatif,OUTPUT,Normal,True,-0.1577
+pH di luar 0-14,OUTPUT,Normal,True,-0.062
+"Gangguan sensor (turb tinggi, pH & suhu stabil)",OUTPUT,Caution,True,-0.0934
+Fitur hilang,ValueError: Fitur wajib tidak ada: ['turbidity_NTU'],-,-,-
+Nilai non-numerik,ValueError: could not convert string to float: 'abc',-,-,-
+Nilai NaN,ValueError: Nilai harus finite,-,-,-
+Nilai tak hingga,ValueError: Nilai harus finite,-,-,-
+None,"TypeError: float() argument must be a string or a real number, not 'NoneType'",-,-,-
+Bukan dictionary,TypeError: Input harus dictionary,-,-,-
