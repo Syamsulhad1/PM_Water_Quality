@@ -1,0 +1,19 @@
+
+# File rahasia
+.env
+.env.*
+!.env.example
+
+# Virtual environment
+.venv/
+venv/
+
+# Cache Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Log
+*.log
+
+*.backup

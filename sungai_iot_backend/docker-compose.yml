@@ -1,0 +1,16 @@
+services:
+  mosquitto:
+    image: eclipse-mosquitto:2
+    ports: ["1883:1883"]
+    volumes:
+      - ./mosquitto.conf:/mosquitto/config/mosquitto.conf:ro
+  api:
+    build: .
+    env_file: .env
+    environment:
+      DATABASE_URL: mysql+pymysql://root:@host.docker.internal:3306/sungai_db
+      MQTT_HOST: mosquitto
+      MQTT_ENABLED: "true"
+    ports: ["8000:8000"]
+    depends_on:
+      mosquitto: {condition: service_started}
