@@ -1,0 +1,1 @@
+Smart Aquatic model artifacts. Features: temp_C, pH, turbidity_NTU. Output is indicative only, not proof of pollution. No future forecasting. Install compatible pandas, numpy, scikit-learn, joblib.

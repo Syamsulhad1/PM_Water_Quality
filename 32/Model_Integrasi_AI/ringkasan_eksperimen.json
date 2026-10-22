@@ -1,0 +1,33 @@
+{
+  "project": "Smart Aquatic",
+  "purpose": "Deteksi/klasifikasi kondisi saat ini, bukan forecasting",
+  "features": [
+    "temp_C",
+    "pH",
+    "turbidity_NTU"
+  ],
+  "target": "class",
+  "selected_classifier": "Random Forest",
+  "rows_used": 2153,
+  "test_metrics": [
+    {
+      "model": "Random Forest",
+      "accuracy": 1.0,
+      "precision_macro": 1.0,
+      "recall_macro": 1.0,
+      "f1_macro": 1.0
+    },
+    {
+      "model": "KNN",
+      "accuracy": 0.9976798143851509,
+      "precision_macro": 0.9981481481481481,
+      "recall_macro": 0.998046875,
+      "f1_macro": 0.9980902398133975
+    }
+  ],
+  "limitations": [
+    "Dataset fishpond belum membuktikan performa pada sungai nyata.",
+    "Label berpotensi berkaitan langsung dengan kekeruhan.",
+    "Anomali bukan bukti pasti pencemaran."
+  ]
+}
